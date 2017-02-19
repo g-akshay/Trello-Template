@@ -1,0 +1,286 @@
+body {
+    font-family: "Roboto", Verdana, sans-serif;
+    color: white;
+    /* overflow-y: hidden; */
+    background: url('../../img/back1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.no-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.login {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white !important;
+    display: none;
+}
+
+.login .well {
+    background-color: rgba(22, 89, 117, 0.89);
+    border: 0px;
+}
+
+.login .legend {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(255, 254, 254, 0.81);
+    background-color: #083E54;
+}
+
+.header {
+    background-color: #083E54;
+    height: 50px;
+    border: 1px solid #042D3E;
+    border-width: 0 0 1px 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header span,
+.header label {
+    cursor: pointer;
+}
+
+.header .fa {
+    opacity: 0.8;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.logo {
+    top: 8px;
+    display: block;
+    cursor: default !important;
+    height: 50px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    background-image: url('../../img/trello.png');
+    text-align: center;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.boards {
+    opacity: 0.7;
+}
+
+.boards .fa {
+    margin-top: 28px;
+}
+
+.boards:hover,
+.boards:hover .fa {
+    opacity: 1 !important;
+}
+
+.boards label {
+    margin: 26px 0 0px 4px;
+    position: absolute;
+    color: white;
+}
+
+.options {
+    float: right;
+    opacity: 0.7;
+    right: 0;
+    position: absolute;
+}
+
+.options label {
+    color: white;
+}
+
+.options .fa {
+    margin-top: 29px;
+}
+
+.options:hover,
+.options:hover .fa,
+.open span,
+.open .fa {
+    opacity: 1 !important;
+}
+
+.addBorad {
+    margin: 0px 0 0 68px;
+}
+
+.addBorad i {
+    font-size: 15px !important;
+}
+
+.profile {
+    margin: -44px 115px 0 2px;
+}
+
+.settings {
+    margin: -44px 0px 0 2px;
+}
+
+.settings-list {
+    margin: 5px -1px 0 0;
+    right: 0px;
+    left: inherit;
+    border-radius: 0px;
+}
+
+.info-bar {
+    height: 30px;
+    position: fixed;
+    margin: 50px 0 0 0;
+    width: 100%;
+    background-color: #074B67;
+    z-index: 990;
+}
+
+.board {
+    margin: 7px 0 0 15px;
+    font-size: 14px;
+}
+
+#openedBoard {
+    color: white;
+    font-size: 14px;
+}
+
+.content {
+    /* width: 100vw; */
+    height: 100vh;
+    padding: 95px 10px 10px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+    z-index: 900;
+}
+
+.panel {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.panel-heading,
+.panel-footer {
+    height: 30px;
+    padding: 5px 7px;
+    background-color: #17504D !important;
+    border-radius: 0px;
+}
+
+.panel-footer {
+    height: 20px;
+    border: 0px;
+    color: black;
+    padding: 1px 7px;
+    background-color: #F4FFFE !important;
+    border-radius: 0px;
+}
+
+.panel-footer a {
+    color: #868383;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.panel-heading h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: white !important;
+    width: auto;
+    position: absolute;
+    margin: 2px 0 0 0;
+}
+
+.list-options {
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+.list-options .fa-ellipsis-v {
+    width: 20px;
+    height: 20px;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.add-list {
+    padding: 0 0 0 0;
+    display: inline-block;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.28);
+    border: 0px;
+    cursor: pointer;
+    width: 200px !important;
+    vertical-align: top;
+}
+
+.add-list:hover {
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.add-list .btn {
+    padding: 0 8px;
+    text-transform: none;
+    margin: 6px 0;
+}
+
+.add-list .btn:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.list-item {
+    width: 330px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list-item .panel-body{
+	max-height: 65vh;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    top: inherit;
+    bottom: 0px;
+    position: fixed;
+    margin: 0 5px;
+}

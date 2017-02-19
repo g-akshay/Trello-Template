@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Trello</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap-material-design.css">
+    <link rel="stylesheet" href="css/vendor/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/vendor/ripples.css">
+    <link rel="stylesheet" href="css/vendor/roboto-font.css">
+    <link rel="stylesheet" href="css/custom/main.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+    <![endif]-->
+
+    <div class="login">
+        <div class="well bs-component">
+            <form class="form-horizontal">
+                <fieldset class="fieldset">
+                    <legend class="align-center legend">Trello</legend>
+                    <div class="form-group is-empty">
+                        <label for="inputName" class="col-md-2 control-label">Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputName" placeholder="Name" autocomplete="off" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group is-empty">
+                        <label for="inputEmail" class="col-md-2 control-label">Email</label>
+
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-raised btn-primary pull-right">Login</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+        </div>
+    </div>
+
+    <div class="mainContainer">
+
+        <div class="header col-sm-12 col-xs-12">
+            <span class="logo"> </span>
+            <span class="allBoards boards">
+                <i class="fa fa-trello"></i>
+                <label>Boards</label>
+            </span>
+            <span class="addBorad boards">
+                <i class="fa fa-plus-square"></i>
+                <label>Add Boards</label>
+            </span>
+
+            <div class="dropdown">
+                <span class="settings options dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-cog"></i>
+                    <label>Settings</label>
+                    <span class="caret"></span>
+                </span>
+                <ul class="dropdown-menu settings-list">
+                    <li>
+                        <a href="#" id="clean">Clean Local Storage</a>
+                    </li>
+                    <li>
+                        <a href="#" id "logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <span class="profile options">
+                <i class="fa fa-user"></i>
+                <label>Profile</label>
+            </span> -->
+
+        </div>
+
+        <div class="info-bar">
+            <label class="board">Current Board: </label>
+            <label id="openedBoard"> Some Name</label>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <div class="list-item">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h5>Panel heading</h5>
+                    <div class="dropdown list-options">
+                        <span class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" id="addCard">Add Card</a>
+                            </li>
+                            <li>
+                                <a href="#" id="deleteList">Delete List</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div id="abc">
+                        <p style="white-space: normal;">
+                            anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Add Card</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="well well-sm add-list">
+            <a href="javascript:void(0)" class="btn btn-info">Add List...</a>
+        </div>
+
+    </div>
+
+    <!-- <object name="foo" type="text/html" data="templates.html"/> -->
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/mustache.min.js"></script>
+    <script type="text/javascript" src="js/vendor/material.min.js"></script>
+    <script type="text/javascript" src="js/vendor/ripples.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/custom/main.js"></script>
+</body>
+
+</html>
+
